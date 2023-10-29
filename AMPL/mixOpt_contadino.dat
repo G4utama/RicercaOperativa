@@ -1,0 +1,20 @@
+set I := lat pat;
+set J := ett sem con tub;
+
+param P := #{I}
+	lat 3000
+	pat 5000;
+param Q := #{J}
+con 145
+	tub 18
+	ett 11
+	sem 70;
+param CoperturaUnitaria := #{I,J}
+	lat sem 7
+	pat tub 3
+	lat ett 1
+	lat tub 0
+	lat con 10
+	pat ett 1
+	pat sem 0
+	pat con 20;
