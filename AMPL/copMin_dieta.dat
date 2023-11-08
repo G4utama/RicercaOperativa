@@ -1,0 +1,18 @@
+set I := ver car fru pes;
+set J := pro fer cal;
+
+param C := #{I}
+	ver 4
+	car 10
+	fru 7
+	pes 3;
+param D := #{J}
+	pro 20
+	fer 30
+	cal 10;
+param MinRisorsa := car 2 pes 3;
+param A : pro fer cal := #{I,J}
+	ver		5	6	5
+	car		15	10	3
+	fru		4	5	12
+	pes		10	15	2;

@@ -1,0 +1,6 @@
+reset;
+model copMin.mod;
+data copMin_mercato.dat;
+option solver xpress;
+solve;
+display costo,x;

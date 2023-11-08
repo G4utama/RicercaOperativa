@@ -1,0 +1,16 @@
+set I := mat ser;
+set J := Ws Wn Ms Mn;
+
+param C := #{I}
+	mat 1.1
+	ser 1.6;
+param D := #{J}
+	Ws 150
+	Wn 110
+	Ms 120
+	Mn 100;
+param A :  := #{I,J}
+	Ws	0.3	0.3
+	Wn	0.1	0.2
+	Ms	0.1	0.3
+	Mn	0.1	0.15

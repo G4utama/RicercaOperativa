@@ -5,7 +5,7 @@ param P := #{I}
 	lat 3000
 	pat 5000;
 param Q := #{J}
-con 145
+	con 145
 	tub 18
 	ett 11
 	sem 70;

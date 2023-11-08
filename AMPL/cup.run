@@ -1,0 +1,6 @@
+reset;
+model cup.mod;
+data cup.dat;
+option solver gurobi;
+solve;
+display fo, x;

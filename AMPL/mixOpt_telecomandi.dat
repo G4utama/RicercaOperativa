@@ -1,0 +1,22 @@
+set I := telA telB;
+set J := dis nav tas log tra led;
+
+param MaxNumProd := telA 5 telB 8;
+
+param P := #{I}
+	telA 3
+	telB 6;
+param Q := #{J}
+	dis 10
+	nav 9
+	tas 21
+	log 18
+	tra 12
+	led 10;
+param CoperturaUnitaria := #{I,J}
+	telA dis 1 telB dis 2
+	telA nav 1 telB nav 0
+	telA tas 2 telB tas 3
+	telA log 2 telB log 2
+	telA tra 1 telB tra 3
+	telA led 1 telB led 0;

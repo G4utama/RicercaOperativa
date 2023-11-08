@@ -1,0 +1,9 @@
+set J := qre1 qre2 qre3 qre4 qre5 qre6; #quartieri
+param Soglia := 15;
+param Costo (tr): qre1 qre2 qre3 qre4 qre5 qre6 :=
+qre1	5	10	20	30	30	20
+qre2	10	5	25	35	20	10
+qre3	20	25	5
+qre4	30	35
+qre5	30	20
+qre6	20	10
