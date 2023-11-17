@@ -2,6 +2,6 @@ reset;
 model mixOpt.mod;
 data mixOpt_contadino.dat;
 expand;
-option solver gurobi;
+option solver cplex;
 solve;
 display profitto, x;

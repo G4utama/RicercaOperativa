@@ -1,5 +1,5 @@
 reset;
-model .\contadino.mod;
+model contadino.mod;
 option solver xpress;
 solve;
 display xL, xP, resa;

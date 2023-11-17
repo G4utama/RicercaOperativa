@@ -1,5 +1,5 @@
 reset;
-model .\telecomandi.mod;
-option solver xpress;
+model telecomandi.mod;
+option solver cplex;
 solve;
 display xA, xB, guadagno;
