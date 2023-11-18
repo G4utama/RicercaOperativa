@@ -1,16 +1,21 @@
-set I := Ita Chi Fra;
-set J := IntesaSP UniCredit AntonVeneta CreditSuisse BancaCina;
-param W := 
-	;
-param C : IntesaSP UniCredit AntonVeneta CreditSuisse 
+set S := Ita Chi Fra;
+set B := IntesaSP UniCredit AntonVeneta CreditSuisse BancaCina;
+
+param a w := 
+	Ita	10000	220
+	Chi	20000	180
+	Fra	10000	200
+param b := 
+	IntesaSP		7100
+	UniCredi		3400
+	AntonVeneta		9700
+	CreditSuisse	5200
+	BancaCina		3050;
+param c : IntesaSP UniCredit AntonVeneta CreditSuisse BancaCina :=
 	Italia	5.5		7.5		6.9		8.0		10.3
 	Cina	15.0	14.3	13.0	16.4	5.0
-	Francia;
-param A := 
-	;
-param B := 
-	;
-	
+	Francia	6.0		7.8		6.3		6.8		11.0;
+
 param alpha := 0.25;
 param beta := 0.30;
-param stbil := 'Italia'';
+param stbil := 'Italia';

@@ -2,6 +2,7 @@ reset;
 model trasporto.mod;
 data trasporto_frigo.dat;
 option solver cplex;
+
 display I,J;
 display O,D;
 display {i in I} C[i,'m3'];
@@ -10,7 +11,6 @@ solve;
 display costo;
 display {i in I, j in J: x[i,j] > 0} x[i,j];
 
-printf 'capacita sfruttate effettivamente\n'
-
+printf 'capacità sfruttate effettivamente\n'
 display {i in I} sum{j in J} x[i,j], O;
-display orig.body, O;
+display orig.body, O, {i in I} O[i] - orig.body[i];

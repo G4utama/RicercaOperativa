@@ -3,6 +3,7 @@ model distribuzione.mod;
 data distribuzionePC.dat;
 option solver cplex;
 #1
+param of1;
 printf "Scenario1: alpha = %4.2d\n", alpha;
 solve;
 display costo, x;
@@ -12,11 +13,11 @@ let alpha := 0.30;
 printf "Scenario2: alpha = %4.2f\n", alpha;
 solve;
 display costo, x;
-printf "Spendo %10.2f euro in piu\n", costo - of1;
+printf "Spendo %10.2f euro in più\n", costo - of1;
 
 let alpha := 0.25;
 solve;
 printf "Forniture (esclusive)\n";
-for{j in J, i in S: x[i,j]>0} {
+for{j in B, i in S: x[i,j]>0}{
 	printf "%12s -> 12s: %8.2f %c\n", i, j, x[i,j], if(x[i,j]==b[j]) then '*' else '';
 }
